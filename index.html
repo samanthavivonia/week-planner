@@ -5,8 +5,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin="anonymous"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==">
 </head>
 <body>
+
+  <div class="title">
+    <h1>Weekly Planner</h1>
+    <div class="underline"></div>
+  </div>
+
+  <div class="notepad">
+
+    <div class="tabs">
+      <div class="tab mon">Monday</div>
+      <div class="tab tues">Tuesday</div>
+      <div class="tab wed">Wednesday</div>
+      <div class="tab thurs">Thursday</div>
+      <div class="tab fri">Friday</div>
+      <div class="tab sat">Saturday</div>
+      <div class="tab sun">Sunday</div>
+      <div class="tab create"><i class="fas fa-pen"></i><span>New</span></div>
+    </div>
+
+    <div class="table-containers">
+      <div class="table-container mon">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container tues hidden">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container wed hidden">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container thurs hidden">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container fri hidden">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container sat hidden">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container sun hidden">
+        <table>
+          <tr>
+            <td class="td-date">1</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">2</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">3</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">4</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+          <tr>
+            <td class="td-date">5</td>
+            <td class="td-desc">Description of Task</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
