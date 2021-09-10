@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.hidden {
-  display: none;
-}
-
 body {
   margin: 0;
   font-family: 'Patrick Hand', sans-serif;
@@ -34,7 +30,6 @@ body {
 .underline {
   width: 125%;
   height: 10px;
-  background-color: #f9f3bf;
   border-radius: 10px;
   position: relative;
   bottom: 2.2em;
@@ -109,7 +104,7 @@ i {
 .table-container {
   width: 100%;
   min-height: 700px;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 5px 5px 5px;
   padding: 2em;
   z-index: 1;
 }
@@ -133,4 +128,103 @@ td {
 .td-desc {
   margin: 0;
   border-bottom: solid 1.5px #6666;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.modal {
+  background-color: white;
+  padding: 1em 2em;
+  border: #6666 2px solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 400px;
+}
+
+.modal h2 {
+  margin: 0 0 0.5em 0;
+}
+
+form {
+  width: 100%;
+  margin: 0;
+}
+
+label,
+input,
+select,
+textarea {
+  color: #4d4d4d;
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.3em;
+  resize: none;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #6666;
+  border-radius: 3px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #3d65a1;
+}
+
+.modal input[type="submit"],
+.modal button {
+  width: 100%;
+  height: 2.2em;
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.button-submit {
+  background-color: #3d65a1;
+  color: white;
+}
+
+.button-submit:hover {
+  background-color: #2d4c7a;
+}
+
+.button-cancel {
+  color: #3d65a1;
+  background-color: white;
+}
+
+.button-cancel:hover {
+  background-color: rgb(243, 243, 243);
+  color: #2d4c7a;
+}
+
+.hidden {
+  display: none;
 }

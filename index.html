@@ -18,7 +18,7 @@
 
   <div class="title">
     <h1>Weekly Planner</h1>
-    <div class="underline"></div>
+    <div class="underline mon"></div>
   </div>
 
   <div class="tabs">
@@ -29,8 +29,9 @@
     <div class="tab fri">Friday</div>
     <div class="tab sat">Saturday</div>
     <div class="tab sun">Sunday</div>
-    <div class="tab create"><i class="fas fa-pen"></i><span>New</span></div>
+    <div class="tab new"><i class="fas fa-pen"></i><span>New</span></div>
   </div>
+
   <div class="notepad">
     <div class="table-containers">
       <div class="table-container mon">
@@ -209,6 +210,38 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="overlay hidden">
+    <div class="modal">
+      <h2>Add New Event</h2>
+      <form action="">
+        <div class="form-item time">
+          <label for="">Time</label>
+          <input type="text" id="time" name="time">
+        </div>
+        <div class="form-item day">
+          <label for="">Day</label>
+          <select name="day" id="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+        <div class="form-item description">
+          <label for="">Description</label>
+          <textarea name="description" id="description" cols="30" rows="5"></textarea>
+        </div>
+        <div class="form-item buttons">
+          <input type="submit" class="button-submit">
+          <button class="button-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <script src="main.js"></script>
